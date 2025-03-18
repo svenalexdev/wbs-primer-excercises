@@ -1,50 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Sign-up for WBS Coding School!</h1>
-        <p>Now is the time to make a change to your career! Choose one of our courses and start your career in Tech!</p>
+      <h1>Sign-up for WBS Coding School!</h1>
+      <p>
+        Now is the time to make a change to your career! Choose one of our
+        courses and start your career in Tech!
+      </p>
     </header>
     <main>
-        <section>
-            <form>
-                <fieldset>
-                    <legend>Fill out the following information to sign up:</legend> <br>
-                    <h2>Personal Information:</h2>
-                    <label for="firstName">First Name: </label>
-                    <input type="text" id="firstN" name="firstName" value="Max" required>
-                    <label for="lastName">Last Name: </label>
-                    <input type="text" id="lastN" name="lastName" value="Mustermann" required> <br>
-                    <label for="email">E-Mail: </label>
-                    <input type="email" id="mail" name="email" value="max.mustermann@gmail.com" required> <br>
-                    <label for="password">Password: </label>
-                    <input type="password" id="pw" name="password" value="password" required> <br>
-                    <label for="birthday">Date of Birth: </label>
-                    <input type="date" id="bd" name="birthdate" value="Max" required> <br>
-                    <label for="telephone">Phone Number: </label>
-                    <input type="tel" id="phone" name="telephone" value="+49 123 456 7890" required> <br>
-                    <br>
-                    <br>
-                    <h2>Choose a Course You Are Interested In:</h2>
-                    <select name="courses" id="course-select">
-                        <option value="dataScience">Data Science</option>
-                        <option value="webDev">Web & App Development</option>
-                        <option value="uxUi">UX/UI Product Design</option>
-                        <option value="dataAnalysis">Data Analysis</option>
-                        <option value="aIforBusiness">AI for Business</option>
-                    </select>
-                </fieldset>
-            </form>
-        </section>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Fill out the following information to sign up:</legend>
+            <br />
+            <h2>Personal Information:</h2>
+            <label for="first-name">First Name: </label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Max"
+              required
+            />
+            <label for="last-name">Last Name: </label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Mustermann"
+              required
+            />
+            <br />
+            <label for="email">E-Mail: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="max.mustermann@gmail.com"
+              required
+            />
+            <br />
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="..."
+              required
+            />
+            <br />
+            <label for="confirm-password">Confirm Password: </label>
+            <input
+              type="confirm-password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="..."
+              required
+            />
+            <br />
+            <label for="birthday">Date of Birth: </label>
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              value="Max"
+              required
+            />
+            <br />
+            <label for="telephone">Phone Number: </label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="+49 1234567890"
+              required
+            />
+            <br />
+            <br />
+            <h2>Choose a Course You Are Interested In:</h2>
+            <select name="courses" id="course-select">
+              <option value="Selectcourse" disabled selected>
+                --Please Select a Course--
+              </option>
+              <option value="dataScience">Data Science</option>
+              <option value="webDev">Web & App Development</option>
+              <option value="uxUi">UX/UI Product Design</option>
+              <option value="dataAnalysis">Data Analysis</option>
+              <option value="aIforBusiness">AI for Business</option>
+            </select>
+            <br />
+            <br />
+            <button type="submit">Send Application</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <br>
-    <footer>
-        © 2025 WBS Coding School
-    </footer>
-</body>
+    <br />
+    <footer>© 2025 WBS Coding School</footer>
+  </body>
 </html>
