@@ -54,6 +54,7 @@ ul {
     padding: 0;
     list-style-type: none;
     width: 100%;
+    text-align: center;
 }
 li {
     background-color: #10576d;
