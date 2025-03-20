@@ -32,6 +32,13 @@ li {
     margin: 4%;
     vertical-align: middle;
 }
+img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.5rem;
+    height: 1.5rem;
+    image-rendering: pixelated;
+}
 p {
     color: #25282c;
     font-size: 1.7rem;
