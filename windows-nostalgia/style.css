@@ -19,6 +19,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    max-width: 100%;
 }
 header {
     color: #fff;
@@ -29,26 +30,33 @@ header {
 }
 li {
     display: inline-block;
-    margin: 4%;
+    margin-right: 4%;
     vertical-align: middle;
+}
+.border {
+    display: inline-block;
 }
 img {
     display: inline-block;
     vertical-align: middle;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 4rem;
+    height: auto;
+    margin-left: 30%;
     image-rendering: pixelated;
 }
 p {
+    display: inline-block;
     color: #25282c;
     font-size: 1.7rem;
+    margin-left: 1.5rem;
 }
 main {
     border: 2px solid darkgray;
     background-color: #c0c0c0;
+    height: 14rem;
 }
 button {
-    margin: 5px 20px 25px 625px;
+    margin: 50px 30px 25px 625px;
     padding: 10px 20px;
     font-size: 1.75rem;
     border-top: 3px solid white;
