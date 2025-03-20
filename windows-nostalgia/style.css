@@ -4,12 +4,21 @@
     margin: 0;
 }
 body {
-    color: #fff;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
+    background-color: #abccf2;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.window {
+    border: 3px solid white;
     border-bottom: 3px solid #25282c;
     border-right: 3px solid #25282c;
     border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 header {
     color: #fff;
