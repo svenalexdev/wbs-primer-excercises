@@ -10,26 +10,30 @@ body {
     color: rgb(31, 25, 77);
 }
 
-header {
+header,
+footer {
     background-color: rgb(29, 23, 80);
     color: white;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 1.5rem;
+    font-weight: 900;
 }
 
-li a {
+nav a {
+    color: white;
     text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
-}
-
-.headline {
-    text-align: center;
-    background-color: rgb(29, 23, 80);
-    color: white;
+    padding: 20px;
 }
 
 h2 {
@@ -37,5 +41,38 @@ h2 {
     margin: 2rem;
 }
 
-p {
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service {
+    flex: 1;
+    margin: 0.8rem;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.impressions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.impressions-grid img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        flex-direction: column;
+    }
+    .impressions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
